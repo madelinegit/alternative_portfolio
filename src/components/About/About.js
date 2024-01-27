@@ -1,51 +1,69 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Col, Row} from "react-bootstrap";
 import Particle from "../Particle";
-import Github from "./Github";
-import Techstack from "./Techstack";
-import Aboutcard from "./AboutCard";
-import laptopImg from "../../Assets/about.png";
-import Toolstack from "./Toolstack";
+import aboutPic from "../../Assets/about.png";
+import SummaryCard from "./Summary";
+import Home2 from "./Home2";
+import { AiFillGithub } from "react-icons/ai";
+import { FaLinkedinIn } from "react-icons/fa";
 
 function About() {
   return (
-    <Container fluid className="about-section">
+    <Container fluid className="home-section">
       <Particle />
       <Container>
-        <Row style={{ justifyContent: "center", padding: "10px" }}>
+        <Row className="aboutstuff"style={{ /* justifyContent: "center" */ padding: "10px", marginTop: "50px"}}>
           <Col
             md={7}
+            className="about-summary"
             style={{
               justifyContent: "center",
               paddingTop: "30px",
               paddingBottom: "50px",
             }}
           >
-            <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              Know Who <strong className="purple">I'M</strong>
+            <h1 style={{ fontSize: "2.1em", paddingBottom: "0px", margin: "10px"}}>
+              <strong className="purple">Professional Summary</strong>
             </h1>
-            <Aboutcard />
+            {/* <Aboutcard /> */}
+            <SummaryCard/>
           </Col>
           <Col
             md={5}
-            style={{ paddingTop: "120px", paddingBottom: "50px" }}
+            style={{ paddingTop: "130px", paddingBottom: "50px" }}
             className="about-img"
           >
-            <img src={laptopImg} alt="about" className="img-fluid" />
+            {/* <Container> */}
+            <img src={aboutPic} alt="about" className="img-fluid" />
+            <ul className= "icons" style={{fontSize: "50px"}}>
+            <li className="social-icons ">
+              <a
+                href="https://github.com/madelinegit"
+                style={{ color: "#700c86"}}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <AiFillGithub />
+              </a>
+            </li>
+            
+            <li className="social-icons">
+              <a
+                href="https://www.linkedin.com/in/madelinemarie/"
+                style={{ color: "#700c86" }}
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <FaLinkedinIn/>
+              </a>
+            </li>
+            
+          </ul>
+          {/* </Container> */}
           </Col>
         </Row>
-        <h1 className="project-heading">
-          Professional <strong className="purple">Skillset </strong>
-        </h1>
-
-        <Techstack />
-
-        <h1 className="project-heading">
-          <strong className="purple">Tools</strong> I use
-        </h1>
-        <Toolstack />
-
-        <Github />
+ 
+        <Home2/>
       </Container>
     </Container>
   );
