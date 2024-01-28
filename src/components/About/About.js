@@ -34,7 +34,7 @@ function About() {
             className="about-img"
           >
             {/* <Container> */}
-            <img src={aboutPic} alt="about" className="img-fluid" />
+            <img src={aboutPic} alt="about" className="img-fluid aboutimage" />
             <ul className= "icons" style={{fontSize: "50px"}}>
             <li className="social-icons ">
               <a
