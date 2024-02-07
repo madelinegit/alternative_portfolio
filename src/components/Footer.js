@@ -19,7 +19,7 @@ function Footer() {
         </Col>
         <Col/>
         <Col md="4" className="footer-body">
-          <ul className="footer-icons">
+          {/* <ul className="footer-icons">
             <li className="social-icons">
               <a
                 href="https://github.com/madelinegit"
@@ -42,7 +42,7 @@ function Footer() {
               </a>
             </li>
 
-          </ul>
+          </ul> */}
         </Col>
       </Row>
     </Container>
