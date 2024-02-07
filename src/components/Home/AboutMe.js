@@ -20,9 +20,9 @@ function AboutMe() {
               paddingBottom: "50px",
             }}
           >
-            <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              Know <strong className="purple">M Gall Dev</strong>
-            </h1>
+            {/* <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
+              Know <strong className="purple">M Dev</strong>
+            </h1> */}
             <Aboutcard />
           </Col>
         </Row>

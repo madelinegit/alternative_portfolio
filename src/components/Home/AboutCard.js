@@ -8,13 +8,13 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hey there, I am <span className="purple">Madeline Gall </span>
-            {/* from <span className="purple"> Cleveland, Ohio.</span> */}
+            Hey there, I am <span className="purple">Madeline The Nomad </span>
+
             <br /><br/>
             <ImPointRight />  I am a creative full-stack developer specializing in React.
             <br/><br/>
-            {/* <ImPointRight />  I am thrilled to offer my freelance services to help bring your digital ideas to life. 
-            <br/><br/> */}
+            <ImPointRight />  I am thrilled to offer my freelance services to help bring your digital ideas to life.
+            <br/><br/>
             <ImPointRight />  My focus is on creating engaging, user-friendly web applications that cater to the unique needs of each client. 
             <br/><br/>
             <ImPointRight />  I'm here to turn your vision into a functional, aesthetically pleasing digital solution.

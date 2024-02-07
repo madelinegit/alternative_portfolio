@@ -36,7 +36,7 @@ function About() {
             {/* <Container> */}
             <img src={aboutPic} alt="about" className="img-fluid aboutimage" />
             <ul className= "icons" style={{fontSize: "50px"}}>
-            <li className="social-icons ">
+            {/* <li className="social-icons ">
               <a
                 href="https://github.com/madelinegit"
                 style={{ color: "#700c86"}}
@@ -45,9 +45,9 @@ function About() {
               >
                 <AiFillGithub />
               </a>
-            </li>
-            
-            <li className="social-icons">
+            </li> */}
+
+            {/* <li className="social-icons">
               <a
                 href="https://www.linkedin.com/in/madelinemarie/"
                 style={{ color: "#700c86" }}
@@ -56,8 +56,8 @@ function About() {
               >
                 <FaLinkedinIn/>
               </a>
-            </li>
-            
+            </li> */}
+
           </ul>
           {/* </Container> */}
           </Col>
